@@ -13,10 +13,10 @@
             <h4>Predicted Price: ${{ prediction['predicted_price'] }}</h4>
             <p>Details:</p>
             <ul>
-                <li>Make: {{ prediction['make'] }}</li>
-                <li>Model: {{ prediction['model'] }}</li>
-                <li>Year: {{ prediction['year'] }}</li>
-                <li>Trim: {{ prediction['trim'] }}</li>
+                <li>Make: {{ prediction['specs']['make'] }}</li>
+                <li>Model: {{ prediction['specs']['model'] }}</li>
+                <li>Year: {{ prediction['specs']['year'] }}</li>
+                <li>Trim: {{ prediction['specs']['trim'] }}</li>
             </ul>
         </div>
         <a href="/" class="btn btn-primary mt-3">Back to Home</a>
